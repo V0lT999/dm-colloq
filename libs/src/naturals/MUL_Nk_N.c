@@ -10,7 +10,7 @@ int *MUL_Nk_N(int *A, int k)
         k1 = 0;
     else k1 = k;
     //allocate a new number with bigger size
-    int* B = malloc((A[0]+3+k1) * sizeof(int));
+    int* B = (int*)malloc((A[0]+3+k1) * sizeof(int));
 
     //set size of this new number
     B[0] = A[0]+k1;
