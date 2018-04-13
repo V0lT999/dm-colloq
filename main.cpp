@@ -179,7 +179,7 @@ void module_4()
 }
 
 int main(int argc, char** argv) {
-    //testing::InitGoogleTest(&argc, argv);
+    testing::InitGoogleTest(&argc, argv);
     setlocale(LC_ALL,"Rus");
 
     int *number1, *number2, choose, warning;
@@ -223,5 +223,5 @@ int main(int argc, char** argv) {
             break;
         }
     }
-    //return RUN_ALL_TESTS();
+    return RUN_ALL_TESTS();
 }
